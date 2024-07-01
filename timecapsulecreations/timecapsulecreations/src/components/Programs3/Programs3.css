@@ -1,0 +1,75 @@
+.third-sec {
+  padding: 20px;
+  text-align: center;
+
+}
+
+.text-th h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.inventors-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background: linear-gradient(rgba(223, 240, 245, 0.425), rgb(152, 183, 201)); */
+}
+
+.sec-img {
+  flex: 1 1 300px; /* Flex items will be at least 300px wide */
+  max-width: 400px;
+  margin: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: left;
+  background: linear-gradient(45deg, #95abdb, transparent);
+}
+
+.sec-img img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.imggg {
+  display: block;
+  margin: 10px auto;
+}
+
+.pra-graph {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .text-th h1 {
+    font-size: 1.5em;
+  }
+
+  .sec-img {
+    flex: 1 1 100%; /* Flex items will take full width on smaller screens */
+    max-width: 100%;
+  }
+
+  .pra-graph {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-th h1 {
+    font-size: 1.2em;
+  }
+
+  .sec-img img {
+    width: 80px;
+  }
+
+  .pra-graph {
+    font-size: 0.8em;
+  }
+}

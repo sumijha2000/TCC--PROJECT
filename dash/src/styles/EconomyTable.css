@@ -1,0 +1,67 @@
+/* Assuming you have a base CSS setup */
+
+/* General styling for the table */
+.health-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  overflow: hidden; /* Hide overflowing content */
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.health-table th,
+.health-table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0; /* Light gray bottom border */
+}
+
+.health-table th {
+  background-color: #f2f2f2; /* Light gray background for header */
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.health-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternate row background color */
+}
+
+.health-table tbody tr:hover {
+  background-color: #e0e0e0; /* Hover color */
+}
+
+/* Button styles */
+.health-table button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: #4caf50; /* Green button background */
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.health-table button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .health-table th,
+  .health-table td {
+    padding: 12px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .health-table th,
+  .health-table td {
+    padding: 10px; /* Further reduce padding for very small screens */
+    font-size: 12px; /* Further decrease font size for very small screens */
+  }
+}

@@ -1,0 +1,76 @@
+/* styles.css */
+/* Adjust table layout for smaller screens */
+@media (max-width: 767px) {
+
+    /* Stack table cells on top of each other */
+    .table-responsive td {
+        display: block;
+    }
+
+    /* Add spacing and styles to improve readability */
+    .table-responsive td {
+        padding: 8px;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    /* Hide table header */
+    .table-responsive thead {
+        display: none;
+    }
+
+    /* Set width of table cells */
+    .table-responsive td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        float: left;
+        width: 50%;
+    }
+
+    .table-responsive td:nth-of-type(2):before {
+        content: "Name";
+    }
+
+    .table-responsive td:nth-of-type(3):before {
+        content: "Email";
+    }
+
+    .table-responsive td:nth-of-type(4):before {
+        content: "Position";
+    }
+
+    .table-responsive td:nth-of-type(5):before {
+        content: "Contact";
+    }
+
+    .table-responsive td:nth-of-type(6):before {
+        content: "CV";
+    }
+
+    .table-responsive td:nth-of-type(7):before {
+        content: "Applied Time";
+    }
+
+    .table-responsive td:nth-of-type(8):before {
+        content: "Action";
+    }
+}
+
+.editDelete {
+    cursor: pointer;
+}
+
+/* Initial icon size */
+.editDelete .edit-icon,
+.editDelete .delete-icon {
+    font-size: 1em;
+    transition: font-size 0.3s ease;
+    /* Smooth transition */
+}
+
+/* Increase size on hover */
+.editDelete .edit-icon:hover,
+.editDelete .delete-icon:hover {
+    font-size: 1.2em;
+    background-color: #d3d3d3;
+    /* Increase font size on hover */
+}

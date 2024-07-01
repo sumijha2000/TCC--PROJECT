@@ -1,0 +1,137 @@
+.upload-page {
+  width: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+    
+
+}
+
+.upload-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.upload-left img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.upload-right {
+  background-image: url('../../assets/formimg.svg');
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 40%;
+}
+
+h3 {
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #555;
+}
+
+input[type="text"],
+textarea,
+input[type="file"],
+button,
+input[type="radio"] {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #faf9f9;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+button {
+  background-color: #36383a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .upload-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .upload-right {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* Upload.css */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
+  text-align: center;
+  position: relative;
+  max-width: 80%;
+}
+
+.popup-content .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #888;
+}
+
+.popup-content button {
+  padding: 8px 20px;
+  margin-top: 10px;
+  background-color: #007bff; /* Blue button background */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.popup-content p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}

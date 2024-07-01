@@ -1,0 +1,112 @@
+/* Styles for the footer */
+.footer {
+  background-color: #faf8f8;
+  color: #080202;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styles for the end box */
+.end-box {
+  display: inline-block;
+  text-align: left;
+  width: 100%; /* Make sure it takes full width on smaller screens */
+}
+
+/* Styles for the end text */
+.end-text {
+  margin-bottom: 20px;
+  margin-right: 950px;
+}
+
+.end-text h4 {
+  margin-top: 0;
+}
+
+/* Styles for the unordered lists */
+.end-text ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.end-text ul li {
+  display: inline;
+  margin-right: 10px;
+  color: blue;
+}
+
+/* Styles for the horizontal line */
+.hr-line {
+  border: none;
+  border-top: 2px solid #d4d0d0af;
+  margin: 20px 20px;
+}
+
+/* Styles for the social media icons */
+.sm-icon {
+  margin-top: 30px;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.sm-icon img {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .end-text {
+      margin-right: 0; /* Reset the margin for smaller screens */
+      text-align: center; /* Center the text for better alignment */
+  }
+
+  .end-text ul li {
+      display: block;
+      margin: 5px 0;
+  }
+
+  .sm-icon {
+      display: block;
+      margin: 10px auto; /* Center the icons */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+      padding: 15px;
+  }
+
+  .end-text h4 {
+      font-size: 18px; /* Adjust the font size */
+  }
+
+  .end-text ul li {
+      margin-right: 5px; /* Reduce margin between list items */
+  }
+
+  .sm-icon img {
+      width: 25px;
+      height: 25px; /* Adjust icon size */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+      padding: 10px;
+  }
+
+  .end-text h4 {
+      font-size: 16px; /* Further reduce font size */
+  }
+
+  .sm-icon img {
+      width: 20px;
+      height: 20px; /* Further reduce icon size */
+  }
+}

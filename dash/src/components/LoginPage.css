@@ -1,0 +1,84 @@
+/* Container for login form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../assets/bgimg1.avif');
+  background-repeat: no-repeat;
+  background-size: cover; /* Image puri screen ko cover karegi */
+  background-position: center center; /* Image ko screen ke center mein position diya gaya hai */
+  background-attachment: fixed; 
+}
+
+/* Login form styles */
+.login-form {
+  background-color: #ffffff; /* White background */
+  background-image: url('../assets/bgimage.webp');
+  background-repeat: no-repeat; /* Background image will not repeat */
+  background-size: cover; /* Cover the entire background */
+  background-position: center center; /* Center the background image */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.login-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333333; /* Dark text color */
+}
+
+.login-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #dddddd; /* Light gray border */
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #6a6a6a; /* Medium gray border on focus */
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #007bff; /* Blue button background color */
+  color: #ffffff; /* White text color */
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3; /* Darker blue background on hover */
+}
+
+.error-message {
+  color: #dc3545; /* Red color for error messages */
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .login-form {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .login-form {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,104 @@
+/* styles.css or UploaderUserData.css */
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .main-content {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+  }
+  
+  .table-container {
+    margin-top: 20px;
+  }
+  
+  .uploader-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .uploader-table th, .uploader-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .uploader-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .edit-button, .delete-button {
+    padding: 6px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+  }
+  
+  .edit-form-container {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .edit-form-container h3 {
+    margin-bottom: 10px;
+  }
+  
+  .edit-form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .edit-form-container label {
+    margin-bottom: 10px;
+  }
+  
+  .edit-form-container input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .edit-form-buttons {
+    margin-top: 10px;
+  }
+  
+  .edit-form-buttons button {
+    padding: 8px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .edit-form-buttons button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+  }
+  
+  .edit-form-buttons button[type="button"] {
+    background-color: #f44336;
+    color: white;
+    border: none;
+  }
+  

@@ -1,0 +1,80 @@
+/* Assuming you have a base CSS setup */
+
+/* General styling for the table */
+.user-signup-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  overflow: hidden; /* Hide overflowing content */
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.user-signup-table th,
+.user-signup-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0; /* Light gray bottom border */
+}
+
+.user-signup-table th {
+  background-color: #f2f2f2; /* Light gray background for header */
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.user-signup-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternate row background color */
+}
+
+.user-signup-table tbody tr:hover {
+  background-color: #e0e0e0; /* Hover color */
+}
+
+/* Button styles */
+.user-signup-table button {
+  padding: 8px 12px;
+  margin-right: 8px; /* Maintain gap between buttons */
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.user-signup-table .edit-button {
+  background-color: #4caf50; /* Green button background for Edit */
+  color: white;
+}
+
+.user-signup-table .edit-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.user-signup-table .delete-button {
+  background-color: #f44336; /* Red button background for Delete */
+  color: white;
+}
+
+.user-signup-table .delete-button:hover {
+  background-color: #cc372b; /* Darker red on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .user-signup-table th,
+  .user-signup-table td {
+    padding: 10px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .user-signup-table th,
+  .user-signup-table td {
+    padding: 8px; /* Further reduce padding for very small screens */
+    font-size: 12px; /* Further decrease font size for very small screens */
+  }
+}

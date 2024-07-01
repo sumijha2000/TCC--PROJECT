@@ -1,0 +1,80 @@
+/* Contact.css */
+
+.contact-page {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-left {
+    margin-right: 20px;
+  }
+  .contact-left img{
+    width: 80%;
+   padding-top: 100px;
+  }
+  
+  .contact-left img {
+    max-width: 100%; /* Ensure the image doesn't overflow */
+  }
+  
+  .contact-right {
+    width: 50%;
+    max-width: 500px; 
+  }
+
+  /* Contact.css */
+
+.contact-right {
+    background-image: url('../../assets/formimg.svg');
+    width: 50%;
+    max-width: 500px; 
+  }
+  .touch-img p {
+    text-align: center;
+  }
+  
+  .contact-right h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-right form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-right label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .contact-right input[type="text"],
+  .contact-right textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #aa9797;
+    border-radius: 5px;
+  }
+  
+  .contact-right input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .contact-right input[type="submit"]:hover {
+    background-color: #2980b9;
+  }
+  
+  
+  

@@ -1,0 +1,148 @@
+/* General Styles */
+.about-page {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-top: 80px;
+  min-height: 100vh;
+  background: linear-gradient(rgb(241, 243, 247), rgb(163, 167, 224));
+}
+
+.about-left,
+.about-right {
+  width: 100%;
+}
+
+.about-img {
+  max-width: 100%;
+  height: auto;
+  padding-left: 20%;
+}
+
+.line {
+  border: 0;
+  border-top: 1px solid #d3cbcb;
+  margin: 20px 0;
+}
+
+.team-members,
+.get-in-touch {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(45deg, #95abdb, transparent);
+  padding-top: 20px;
+}
+
+.team-img,
+.touch-img {
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Custom Colorful Styles */
+.about-left h3,
+.about-right h3 {
+  color: #1414136c;
+  font-size: 50px;
+}
+
+.about-left h4,
+.about-right h4,
+.about-left p {
+  color: #474b4e;
+  text-align: justify;
+  max-width: 900px;
+  font-size: 20px;
+  padding-left: 100px;
+}
+
+.team-img h4,
+.team-img h5,
+.touch-img h4,
+.touch-img h5 {
+  color: #1414136c;
+}
+/* .team-img h3{
+  text-align: center;
+} */
+
+.about-left p,
+.about-right p,
+.team-img h4,
+.touch-img h4 {
+  color: #474b4e;
+  padding-left: 30px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and larger screens */
+@media (min-width: 768px) {
+  .about-section {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-left,
+  .about-right {
+    width: 50%;
+  }
+
+  .team-img,
+  .touch-img {
+    width: calc(50% - 20px); /* Adjust for margins */
+    max-width: none;
+  }
+}
+
+/* For desktops and larger screens */
+@media (min-width: 992px) {
+  .team-img,
+  .touch-img {
+    width: calc(25% - 20px); /* Adjust for margins */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 767px) {
+  .about-section {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .about-left h3,
+  .about-right h3 {
+    font-size: 36px; /* Adjust font size for smaller screens */
+  }
+
+  .about-left h4,
+  .about-right h4,
+  .about-left p {
+    font-size: 16px;
+    padding-left: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .about-img {
+    padding-left: 0;
+    margin-bottom: 20px; /* Add margin for spacing */
+  }
+
+  .team-members,
+  .get-in-touch {
+    padding-top: 10px;
+  }
+
+  .team-img,
+  .touch-img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
